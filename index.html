@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Csshoot-game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <input type="checkbox" id="launcher" class="hidden" />
+    <input type="checkbox" id="rules" class="hidden" />
+    <input type="checkbox" id="settings" class="hidden" />
+    <!-- THEME -->
+    <input type="radio" name="target" id="classic" class="hidden" checked />
+    <input type="radio" name="target" id="alien" class="hidden" />
+    <input type="radio" name="target" id="can" class="hidden" />
+    <!-- SPEED -->
+    <input type="radio" name="speed" id="slow" class="hidden" />
+    <input type="radio" name="speed" id="normal" class="hidden" checked />
+    <input type="radio" name="speed" id="fast" class="hidden" />
+    <!-- LANGUAGE -->
+    <input type="checkbox" id="language" class="hidden" />
+    <!-- TARGETS -->
+    <input type="checkbox" name="" id="target-1" class="hidden" />
+    <input type="checkbox" name="" id="target-2" class="hidden" />
+    <input type="checkbox" name="" id="target-3" class="hidden" />
+    <input type="checkbox" name="" id="target-4" class="hidden" />
+    <input type="checkbox" name="" id="target-5" class="hidden" />
+    <input type="checkbox" name="" id="target-6" class="hidden" />
+    <input type="checkbox" name="" id="target-7" class="hidden" />
+    <input type="checkbox" name="" id="target-8" class="hidden" />
+    <input type="checkbox" name="" id="target-9" class="hidden" />
+    <input type="checkbox" name="" id="target-10" class="hidden" />
+    <input type="checkbox" name="" id="target-11" class="hidden" />
+    <input type="checkbox" name="" id="target-12" class="hidden" />
+    <input type="checkbox" name="" id="target-13" class="hidden" />
+    <input type="checkbox" name="" id="target-14" class="hidden" />
+    <input type="checkbox" name="" id="target-15" class="hidden" />
+    <input type="checkbox" name="" id="target-16" class="hidden" />
+    <input type="checkbox" name="" id="target-17" class="hidden" />
+    <input type="checkbox" name="" id="target-18" class="hidden" />
+    <input type="checkbox" name="" id="target-19" class="hidden" />
+    <input type="checkbox" name="" id="target-20" class="hidden" />
+    <!-- ABOUT -->
+    <input type="checkbox" name="" id="about" class="hidden" />
+
+    <div class="game-container">
+      <div class="bg-container"></div>
+      <div class="homepage">
+        <div class="game-name">
+          <h1>CSShoot game</h1>
+        </div>
+        <div class="game-actions">
+          <label for="launcher" class="launcher-label homepage-label">
+            <span class="lang-en">play</span>
+            <span class="lang-fr">jouer</span>
+          </label>
+          <label for="rules" class="rules-label homepage-label">
+            <span class="lang-en">rules</span>
+            <span class="lang-fr">règles</span>
+          </label>
+          <label for="settings" class="settings-label homepage-label">
+            <span class="lang-en">settings</span>
+            <span class="lang-fr">paramètres</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="settings-wrapper">
+        <div class="title">
+          <h2>
+            <span class="lang-en">SETTINGS</span>
+            <span class="lang-fr">PARAMÈTRES</span>
+          </h2>
+        </div>
+
+        <div class="settings-elts-wrapper">
+          <div class="elt-title">
+            <span class="lang-en">Theme</span>
+            <span class="lang-fr">Thème</span>
+          </div>
+          <div class="target-choice-container">
+            <label for="classic" class="classic-target target-choice-label">
+            </label>
+            <label for="alien" class="alien-target target-choice-label">
+            </label>
+            <label for="can" class="can-target target-choice-label"> </label>
+            <span>
+              <span class="lang-en">classic</span>
+              <span class="lang-fr">classique</span>
+            </span>
+            <span>alien</span>
+            <span>
+              <span class="lang-en">can</span>
+              <span class="lang-fr">boîte</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="settings-elts-wrapper">
+          <div class="elt-title">
+            <span class="lang-en">speed</span>
+            <span class="lang-fr">vitesse</span>
+          </div>
+          <div class="speed-choice-container">
+            <label for="slow" class="slow-target speed-choice-label">
+              <span class="lang-en">slow</span>
+              <span class="lang-fr">lent</span>
+            </label>
+            <label for="normal" class="normal-target speed-choice-label"
+              >normal
+            </label>
+            <label for="fast" class="fast-target speed-choice-label">
+              <span class="lang-en">fast</span>
+              <span class="lang-fr">rapide</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="settings-elts-wrapper">
+          <div class="elt-title">
+            <span class="lang-en">language</span>
+            <span class="lang-fr">langue</span>
+          </div>
+          <div class="language-choice-container">
+            <span>EN</span>
+            <label for="language" class="language-choice-label"></label>
+            <span>FR</span>
+          </div>
+        </div>
+
+        <label for="settings" class="back-btn">
+          <span class="lang-en">back</span>
+          <span class="lang-fr">retour</span>
+        </label>
+      </div>
+
+      <div class="rules-wrapper">
+        <h2 class="title">
+          <span class="lang-en">RULES</span>
+          <span class="lang-fr">RÈGLES</span>
+        </h2>
+        <p>
+          <span class="lang-en"
+            >The aim is to shoot at the 20 targets within 30 seconds.</span
+          >
+          <span class="lang-fr"
+            >Le but du jeu est de tirer sur les 20 cibles en 30 secondes.</span
+          >
+        </p>
+        <label for="rules" class="back-btn">
+          <span class="lang-en">back</span>
+          <span class="lang-fr">retour</span>
+        </label>
+      </div>
+
+      <div class="game-board">
+        <div class="game-infos">
+          <div class="info-container">
+            <span>TIME</span>
+            <div class="time-bar-container"></div>
+          </div>
+          <div class="info-container">
+            <span>SCORE</span>
+            <div class="game-score"></div>
+          </div>
+        </div>
+        <div class="target-container">
+          <label for="target-1" class="label-1 label-target"></label>
+          <label for="target-11" class="label-11 label-target"></label>
+          <label for="target-2" class="label-2 label-target"></label>
+          <label for="target-12" class="label-12 label-target"></label>
+          <label for="target-3" class="label-3 label-target"></label>
+          <label for="target-13" class="label-13 label-target"></label>
+          <label for="target-4" class="label-4 label-target"></label>
+          <label for="target-14" class="label-14 label-target"></label>
+          <label for="target-5" class="label-5 label-target"></label>
+          <label for="target-15" class="label-15 label-target"></label>
+          <label for="target-6" class="label-6 label-target"></label>
+          <label for="target-16" class="label-16 label-target"></label>
+          <label for="target-7" class="label-7 label-target"></label>
+          <label for="target-17" class="label-17 label-target"></label>
+          <label for="target-8" class="label-8 label-target"></label>
+          <label for="target-18" class="label-18 label-target"></label>
+          <label for="target-9" class="label-9 label-target"></label>
+          <label for="target-19" class="label-19 label-target"></label>
+          <label for="target-10" class="label-10 label-target"></label>
+          <label for="target-20" class="label-20 label-target"></label>
+        </div>
+
+        <div class="last-scene looser">
+          <span class="lang-en">YOU LOOSE !!!</span>
+          <span class="lang-fr">PERDU !!!</span>
+          <label for="about" class="back-btn">
+            <span class="lang-en">about</span>
+            <span class="lang-fr">à propos</span>
+          </label>
+        </div>
+
+        <div class="last-scene winner">
+          <span class="lang-en">YOU WIN !!!</span>
+          <span class="lang-fr">GAGNÉ !!!</span>
+          <label for="about" class="back-btn">
+            <span class="lang-en">about</span>
+            <span class="lang-fr">à propos</span>
+          </label>
+        </div>
+
+        <div class="last-scene about">
+          <span class="lang-en"
+            >Created by maxew during twitch live sessions.</span
+          >
+          <span class="lang-fr">Créé par maxew en live sur twitch.</span>
+          <h2>follow me :</h2>
+          <div>twitter : @m4xew (en) / @DevMaxew (fr)</div>
+          <a href="http://twitch.tv/maxewledev">twitch</a><br />
+          <a href="https://maxime-malfilatre.com">
+            <span class="lang-en">a tour on my portfolio...</span>
+            <span class="lang-fr">visiter mon portfolio...</span></a
+          >
+          <div>
+            <span class="lang-en">thank you for playing.</span>
+            <span class="lang-fr">merci d'avoir joué.</span>
+          </div>
+          <div class="creation">maxew 2022</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
